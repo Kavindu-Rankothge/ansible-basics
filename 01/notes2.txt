@@ -1,0 +1,23 @@
+1.
+For documentation use:
+ansible-doc -l
+ansibile-doc user (/search for EXAMPLES)
+
+2.
+Can use -m command -a "command" ('m' is for module and 'a' is for arguments)
+ansible <group_name> -m command -a "cat /etc/fstab"
+
+ kavindu on  ~/ansible-practive/01
+# ansible local -m command -a "cat /etc/hostname"
+[WARNING]: Invalid characters were found in group names but not replaced, use
+-vvvv to see details
+[WARNING]: Platform linux on host 127.0.0.1 is using the discovered Python
+interpreter at /usr/bin/python3.10, but future installation of another Python
+interpreter could change the meaning of that path. See
+https://docs.ansible.com/ansible-
+core/2.17/reference_appendices/interpreter_discovery.html for more information.
+127.0.0.1 | CHANGED | rc=0 >>
+Kavi-zen14
+
+3.
+ansible local -m user -a "name=ansible uid=4000 state=present"

@@ -1,0 +1,65 @@
+1. 
+I have a ansible.cfg with inventory groups and hosts.
+Can use: ansible <group_name> --list-hosts to see hots in the group
+Can also define inventory and remote user in ansible.cfg file
+
+2.
+use -m for built in commands. 
+ping checks if python is intalled
+ansible -m ping <group_name>
+
+[defaults]
+inventory = ./inventory
+remote_user = kavindu
+ask_pass = false
+
+3. 
+can use these flags with ansible commands
+ansible -i ./inventory -b (become) -u (user) --become-method = sudo, su
+--become-user root
+--ask-become-pass 
+
+ kavindu on  ~/ansible-practive/01
+# ansible ftpservers --list-hosts
+[WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+  hosts (5):
+    ftp01.server.com
+    ftp02.server.com
+    ftp03.server.com
+    ftp04.server.com
+    ftp05.server.com
+
+ kavindu on  ~/ansible-practive/01
+# ansible patching --list-hosts
+[WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+  hosts (4):
+    prodserver1
+    devserver1
+    devserver2
+    devserver3
+
+ kavindu on  ~/ansible-practive/01
+# ansible patching --list-hosts --inventory ./inventory
+[WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+  hosts (4):
+    prodserver1
+    devserver1
+    devserver2
+    devserver3
+
+ kavindu on  ~/ansible-practive/01
+# ansible -m ping local
+[WARNING]: Invalid characters were found in group names but not replaced, use
+-vvvv to see details
+[WARNING]: Platform linux on host 127.0.0.1 is using the discovered Python
+interpreter at /usr/bin/python3.10, but future installation of another Python
+interpreter could change the meaning of that path. See
+https://docs.ansible.com/ansible-
+core/2.17/reference_appendices/interpreter_discovery.html for more information.
+127.0.0.1 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3.10"
+    },
+    "changed": false,
+    "ping": "pong"
+}
