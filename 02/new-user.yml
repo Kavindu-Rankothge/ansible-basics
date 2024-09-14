@@ -1,0 +1,11 @@
+---
+
+- name: Creating the Ansible user
+  hosts: local
+  tasks:
+    - name: creating user
+      ansible.builtin.user:
+        name: ansible
+        uid: 4000
+        state: present
+

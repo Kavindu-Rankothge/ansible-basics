@@ -1,0 +1,8 @@
+1. ansible-playbook <playbook_name> -v(for verbose) 
+--syntax-check (check syntax) (can also use -i -u)
+
+2. To dry run playbook use -C
+ansible-playbook <playbook_name> -C
+
+3.
+A playbook can have multiple plays with (see muliple-plays.yml)

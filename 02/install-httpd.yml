@@ -1,0 +1,17 @@
+---
+
+- name: Install httpd and start
+  hosts: local
+  become: true
+  tasks:
+    - name: Install apache httpd
+      ansible.builtin.apt:
+        name: apache2
+        state: present
+
+    - name: Stop the service
+      ansible.builtin.service:
+        name: apache2
+        state: stopped
+        enabled: true
+
