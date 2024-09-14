@@ -1,0 +1,7 @@
+---
+
+- name: Ping
+  hosts: local
+  tasks:
+    - name: doing ping
+      ansible.builtin.command: "cat /etc/hostname"

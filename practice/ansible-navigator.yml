@@ -1,0 +1,5 @@
+ansible-navigator:
+  execution-environment:
+    image: ghcr.io/ansible/community-ansible-dev-tools:latest
+    pull:
+      policy: missing

@@ -1,0 +1,205 @@
+{
+    "plays": [
+        {
+            "___progress": "100%",
+            "__changed": 0,
+            "__failed": 0,
+            "__ignored": 0,
+            "__in progress": 0,
+            "__ok": 0,
+            "__percent_complete": 100,
+            "__play_name": "Ping",
+            "__progress": "Complete",
+            "__skipped": 0,
+            "__task_count": 1,
+            "__unreachable": 1,
+            "name": "Ping",
+            "pattern": "local",
+            "play": "Ping",
+            "play_pattern": "local",
+            "play_uuid": "ee0a80ad-561b-e08b-cc37-000000000007",
+            "playbook": "/home/kavindu/code/repo/ansible-basics/practice/hello-world.yml",
+            "playbook_uuid": "6885c92e-6f64-4225-8764-1bf1a6677467",
+            "tasks": [
+                {
+                    "__changed": false,
+                    "__duration": "0s",
+                    "__host": "localhost",
+                    "__number": 0,
+                    "__result": "Unreachable",
+                    "__task": "Gathering Facts",
+                    "__task_action": "gather_facts",
+                    "duration": 0.034028,
+                    "end": "2024-09-14T14:32:47.201318+00:00",
+                    "host": "localhost",
+                    "play": "Ping",
+                    "play_pattern": "local",
+                    "play_uuid": "ee0a80ad-561b-e08b-cc37-000000000007",
+                    "playbook": "/home/kavindu/code/repo/ansible-basics/practice/hello-world.yml",
+                    "playbook_uuid": "6885c92e-6f64-4225-8764-1bf1a6677467",
+                    "remote_addr": "localhost",
+                    "res": {
+                        "changed": false,
+                        "msg": "Failed to connect to the host via ssh: ssh: connect to host localhost port 22: Connection refused",
+                        "unreachable": true
+                    },
+                    "resolved_action": "ansible.builtin.gather_facts",
+                    "start": "2024-09-14T14:32:47.167290+00:00",
+                    "task": "Gathering Facts",
+                    "task_action": "gather_facts",
+                    "task_args": "",
+                    "task_path": "/home/kavindu/code/repo/ansible-basics/practice/hello-world.yml:3",
+                    "task_uuid": "ee0a80ad-561b-e08b-cc37-00000000000d",
+                    "uuid": "16cb6408-c454-4926-b361-bae13a7168c2"
+                }
+            ],
+            "uuid": "ee0a80ad-561b-e08b-cc37-000000000007"
+        }
+    ],
+    "settings_entries": {
+        "ansible-navigator": {
+            "ansible": {
+                "config": {
+                    "help": false
+                },
+                "doc": {
+                    "help": false,
+                    "plugin": {
+                        "type": "module"
+                    }
+                },
+                "inventory": {
+                    "entries": [
+                        "/home/kavindu/code/repo/ansible-basics/practice/inventory"
+                    ],
+                    "help": false
+                },
+                "playbook": {
+                    "help": false,
+                    "path": "/home/kavindu/code/repo/ansible-basics/practice/hello-world.yml"
+                }
+            },
+            "ansible-builder": {
+                "help": false,
+                "workdir": "/home/kavindu/code/repo/ansible-basics/practice"
+            },
+            "ansible-runner": {
+                "job-events": false
+            },
+            "app": "run",
+            "collection-doc-cache-path": "/home/kavindu/.cache/ansible-navigator/collection_doc_cache.db",
+            "color": {
+                "enable": true,
+                "osc4": true
+            },
+            "editor": {
+                "command": "vi +{line_number} {filename}",
+                "console": true
+            },
+            "enable-prompts": false,
+            "exec": {
+                "command": "/bin/bash",
+                "shell": true
+            },
+            "execution-environment": {
+                "container-engine": "podman",
+                "enabled": true,
+                "image": "ghcr.io/ansible/community-ansible-dev-tools:latest",
+                "pull": {
+                    "policy": "missing"
+                }
+            },
+            "format": "yaml",
+            "images": {
+                "details": [
+                    "everything"
+                ]
+            },
+            "logging": {
+                "append": true,
+                "file": "/home/kavindu/code/repo/ansible-basics/practice/ansible-navigator.log",
+                "level": "warning"
+            },
+            "mode": "interactive",
+            "playbook-artifact": {
+                "enable": true,
+                "save-as": "{playbook_dir}/{playbook_name}-artifact-{time_stamp}.json"
+            },
+            "settings": {
+                "effective": false,
+                "sample": false,
+                "schema": "json",
+                "sources": false
+            },
+            "time-zone": "UTC"
+        }
+    },
+    "settings_sources": {
+        "ansible-navigator.ansible-builder.help": "Defaults",
+        "ansible-navigator.ansible-builder.workdir": "Defaults",
+        "ansible-navigator.ansible-lint.config": "Not set",
+        "ansible-navigator.ansible-lint.lintables": "Not set",
+        "ansible-navigator.ansible-runner.artifact-dir": "Not set",
+        "ansible-navigator.ansible-runner.job-events": "Defaults",
+        "ansible-navigator.ansible-runner.rotate-artifacts-count": "Not set",
+        "ansible-navigator.ansible-runner.timeout": "Not set",
+        "ansible-navigator.ansible.cmdline": "Not set",
+        "ansible-navigator.ansible.config.help": "Defaults",
+        "ansible-navigator.ansible.config.path": "Not set",
+        "ansible-navigator.ansible.doc.help": "Defaults",
+        "ansible-navigator.ansible.doc.plugin.name": "Not set",
+        "ansible-navigator.ansible.doc.plugin.type": "Defaults",
+        "ansible-navigator.ansible.inventory.entries": "Command line",
+        "ansible-navigator.ansible.inventory.help": "Defaults",
+        "ansible-navigator.ansible.playbook.help": "Defaults",
+        "ansible-navigator.ansible.playbook.path": "Command line",
+        "ansible-navigator.app": "Command line",
+        "ansible-navigator.collection-doc-cache-path": "Defaults",
+        "ansible-navigator.color.enable": "Defaults",
+        "ansible-navigator.color.osc4": "Defaults",
+        "ansible-navigator.editor.command": "Defaults",
+        "ansible-navigator.editor.console": "Defaults",
+        "ansible-navigator.enable-prompts": "Defaults",
+        "ansible-navigator.exec.command": "Defaults",
+        "ansible-navigator.exec.shell": "Defaults",
+        "ansible-navigator.execution-environment.container-engine": "Automatically determined",
+        "ansible-navigator.execution-environment.container-options": "Not set",
+        "ansible-navigator.execution-environment.enabled": "Defaults",
+        "ansible-navigator.execution-environment.environment-variables.pass": "Not set",
+        "ansible-navigator.execution-environment.environment-variables.set": "Not set",
+        "ansible-navigator.execution-environment.image": "Settings file",
+        "ansible-navigator.execution-environment.pull.arguments": "Not set",
+        "ansible-navigator.execution-environment.pull.policy": "Settings file",
+        "ansible-navigator.execution-environment.volume-mounts": "Not set",
+        "ansible-navigator.format": "Defaults",
+        "ansible-navigator.images.details": "Defaults",
+        "ansible-navigator.inventory-columns": "Not set",
+        "ansible-navigator.logging.append": "Defaults",
+        "ansible-navigator.logging.file": "Defaults",
+        "ansible-navigator.logging.level": "Defaults",
+        "ansible-navigator.mode": "Defaults",
+        "ansible-navigator.playbook-artifact.enable": "Defaults",
+        "ansible-navigator.playbook-artifact.replay": "Not set",
+        "ansible-navigator.playbook-artifact.save-as": "Defaults",
+        "ansible-navigator.settings.effective": "Defaults",
+        "ansible-navigator.settings.sample": "Defaults",
+        "ansible-navigator.settings.schema": "Defaults",
+        "ansible-navigator.settings.sources": "Defaults",
+        "ansible-navigator.time-zone": "Defaults",
+        "settings_file_path": "/home/kavindu/code/repo/ansible-basics/practice/ansible-navigator.yml",
+        "settings_file_source": "Search path"
+    },
+    "status": "failed",
+    "status_color": 9,
+    "stdout": [
+        "",
+        "PLAY [Ping] ********************************************************************",
+        "",
+        "TASK [Gathering Facts] *********************************************************",
+        "\u001b[1;31mfatal: [localhost]: UNREACHABLE! => {\"changed\": false, \"msg\": \"Failed to connect to the host via ssh: ssh: connect to host localhost port 22: Connection refused\", \"unreachable\": true}\u001b[0m",
+        "",
+        "PLAY RECAP *********************************************************************",
+        "\u001b[0;31mlocalhost\u001b[0m                  : ok=0    changed=0    \u001b[1;31munreachable=1   \u001b[0m failed=0    skipped=0    rescued=0    ignored=0   "
+    ],
+    "version": "2.0.0"
+}
